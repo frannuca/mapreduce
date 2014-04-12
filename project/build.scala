@@ -30,7 +30,10 @@ object Dependencies {
 
   val actors = "com.typesafe.akka" %% "akka-actor" % "2.2.3" 
   val apacheMath = "org.apache.commons" % "commons-math3" % "3.0"    
-  val akkaConf = "com.typesafe" % "config" % "1.2.0"  
+  val akkaConf = "com.typesafe" % "config" % "1.2.0"
+  val akkaCluster = "com.typesafe.akka" %% "akka-cluster" % "2.2.3"
+  val akkaActor = "com.typesafe.akka" %% "akka-actor" % "2.2.3"
+  val akkaRemote = "com.typesafe.akka" %% "akka-remote" % "2.2.3"
   val junit = "junit" % "junit" % "4.11"
   val scalaTest = "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
   val scalaReflect = "org.scala-lang" % "scala-reflect" % BuildSettings.buildScalaVersion
@@ -50,7 +53,7 @@ object ScalaMatBuild extends Build {
     "mapreduce",
     file("."),
     settings = buildSettings ++ Seq(resolvers := Seq(typesafe, sonatype1, sonatype2), libraryDependencies ++=
-      Seq(actors, apacheMath, scalaTest,akkaConf, junit, scalaTest, scalaReflect,log4j))
+      Seq(actors, apacheMath, scalaTest,akkaConf,akkaRemote,akkaActor,akkaCluster, junit, scalaTest, scalaReflect,log4j))
   ) 
 
 
