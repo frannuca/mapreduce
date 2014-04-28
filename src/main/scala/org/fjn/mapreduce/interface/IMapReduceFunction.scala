@@ -9,7 +9,7 @@ import scala.reflect.runtime.{universe => ru}
 /**
  * Base interface for all the
  */
-trait IMapReduceFunction{
+abstract class IMapReduceFunction{
   /**
    * used to get the uuid of this specific function. This uuid is useful to ask server if the given function is already
    * loaded in the server and therefor no need to re-transfer it.
@@ -22,9 +22,6 @@ trait IMapReduceFunction{
 
 /**
  * This class implements a container to execute map reduction
- * @param evidence$1 Type of the items in the Seq to be reduces
- * @param evidence$2 Type of transformed sequence
- * @param evidence$3 final type after applying reduce function
  * @tparam A         Type of the items in the Seq to be reduces
  * @tparam mapR      Type of transformed sequence
  * @tparam reduceR   final type after applying reduce function
@@ -60,7 +57,7 @@ abstract class MapReduceFunctionBase[A:TypeTag,mapR:TypeTag,reduceR:TypeTag] ext
   def mapReduce(x:Seq[A]):reduceR= x.par.map(mapExecutor).foldLeft(getDefaultAccumulator)(reduceExecutor)
 
   def run(x:Seq[Any]):Any={
-    mapReduce(x.map(_.asInstanceOf[A])).asInstanceOf[reduceR]
+    mapReduce(x.map(_.asInstanceOf[A]))
   }
 
 }

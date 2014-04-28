@@ -1,0 +1,41 @@
+package org.fjn.mapreduce.messages;
+
+option java_package = "org.fjn.mapreduce.messages";
+option java_outer_classname = "MapReduceMessages";
+
+
+
+message InstallJARRequest {
+  required string  jarPayload = 1;
+  required string clazzPath = 2;
+}
+
+message InstallJARResponse {
+  required string  libraryId = 1;
+}
+
+
+message CallMapReduceRequest{
+    required string libraryId = 1;
+    repeated double series = 2;
+}
+
+
+message CallMapReduceResponse{
+    required string libraryId = 1;
+    required double value = 2;
+    optional double executionTimeMsMap = 3;
+    optional double executionTimeMsReduce = 4;
+}
+
+
+message CallMapReduceWithJARRequest{
+    required InstallJARRequest library = 1;
+    repeated double series = 2;
+}
+
+message CallMapReduceWithJARResponse{
+    required double value = 1;
+    optional double executionTimeMsMap = 2;
+    optional double executionTimeMsReduce = 3;
+}
