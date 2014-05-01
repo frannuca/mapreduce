@@ -5,13 +5,9 @@ option java_outer_classname = "MapReduceMessages";
 
 
 
-message InstallJARRequest {
+message InstallJARNotification {
   required string  jarPayload = 1;
   required string clazzPath = 2;
-}
-
-message InstallJARResponse {
-  required string  libraryId = 1;
 }
 
 
@@ -30,7 +26,7 @@ message CallMapReduceResponse{
 
 
 message CallMapReduceWithJARRequest{
-    required InstallJARRequest library = 1;
+    required InstallJARNotification library = 1;
     repeated double series = 2;
 }
 

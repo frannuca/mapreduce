@@ -8,7 +8,7 @@ public final class MapReduceMessages {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface InstallJARRequestOrBuilder
+  public interface InstallJARNotificationOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required string jarPayload = 1;
@@ -42,24 +42,24 @@ public final class MapReduceMessages {
         getClazzPathBytes();
   }
   /**
-   * Protobuf type {@code org.fjn.mapreduce.messages.InstallJARRequest}
+   * Protobuf type {@code org.fjn.mapreduce.messages.InstallJARNotification}
    */
-  public static final class InstallJARRequest extends
+  public static final class InstallJARNotification extends
       com.google.protobuf.GeneratedMessage
-      implements InstallJARRequestOrBuilder {
-    // Use InstallJARRequest.newBuilder() to construct.
-    private InstallJARRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements InstallJARNotificationOrBuilder {
+    // Use InstallJARNotification.newBuilder() to construct.
+    private InstallJARNotification(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private InstallJARRequest(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private InstallJARNotification(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final InstallJARRequest defaultInstance;
-    public static InstallJARRequest getDefaultInstance() {
+    private static final InstallJARNotification defaultInstance;
+    public static InstallJARNotification getDefaultInstance() {
       return defaultInstance;
     }
 
-    public InstallJARRequest getDefaultInstanceForType() {
+    public InstallJARNotification getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -69,7 +69,7 @@ public final class MapReduceMessages {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private InstallJARRequest(
+    private InstallJARNotification(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -116,28 +116,28 @@ public final class MapReduceMessages {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARRequest_descriptor;
+      return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARNotification_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARRequest_fieldAccessorTable
+      return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARNotification_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.class, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder.class);
+              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.class, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<InstallJARRequest> PARSER =
-        new com.google.protobuf.AbstractParser<InstallJARRequest>() {
-      public InstallJARRequest parsePartialFrom(
+    public static com.google.protobuf.Parser<InstallJARNotification> PARSER =
+        new com.google.protobuf.AbstractParser<InstallJARNotification>() {
+      public InstallJARNotification parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new InstallJARRequest(input, extensionRegistry);
+        return new InstallJARNotification(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<InstallJARRequest> getParserForType() {
+    public com.google.protobuf.Parser<InstallJARNotification> getParserForType() {
       return PARSER;
     }
 
@@ -287,53 +287,53 @@ public final class MapReduceMessages {
       return super.writeReplace();
     }
 
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(byte[] data)
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(java.io.InputStream input)
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseDelimitedFrom(java.io.InputStream input)
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseDelimitedFrom(
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parseFrom(
+    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -342,7 +342,7 @@ public final class MapReduceMessages {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest prototype) {
+    public static Builder newBuilder(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -354,24 +354,24 @@ public final class MapReduceMessages {
       return builder;
     }
     /**
-     * Protobuf type {@code org.fjn.mapreduce.messages.InstallJARRequest}
+     * Protobuf type {@code org.fjn.mapreduce.messages.InstallJARNotification}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequestOrBuilder {
+       implements org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotificationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARRequest_descriptor;
+        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARNotification_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARRequest_fieldAccessorTable
+        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARNotification_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.class, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder.class);
+                org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.class, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder.class);
       }
 
-      // Construct using org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.newBuilder()
+      // Construct using org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -404,23 +404,23 @@ public final class MapReduceMessages {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARRequest_descriptor;
+        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARNotification_descriptor;
       }
 
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest getDefaultInstanceForType() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.getDefaultInstance();
+      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification getDefaultInstanceForType() {
+        return org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.getDefaultInstance();
       }
 
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest build() {
-        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest result = buildPartial();
+      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification build() {
+        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest buildPartial() {
-        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest result = new org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest(this);
+      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification buildPartial() {
+        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification result = new org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -437,16 +437,16 @@ public final class MapReduceMessages {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest) {
-          return mergeFrom((org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest)other);
+        if (other instanceof org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification) {
+          return mergeFrom((org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest other) {
-        if (other == org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification other) {
+        if (other == org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.getDefaultInstance()) return this;
         if (other.hasJarPayload()) {
           bitField0_ |= 0x00000001;
           jarPayload_ = other.jarPayload_;
@@ -477,11 +477,11 @@ public final class MapReduceMessages {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest parsedMessage = null;
+        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest) e.getUnfinishedMessage();
+          parsedMessage = (org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -640,494 +640,15 @@ public final class MapReduceMessages {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:org.fjn.mapreduce.messages.InstallJARRequest)
+      // @@protoc_insertion_point(builder_scope:org.fjn.mapreduce.messages.InstallJARNotification)
     }
 
     static {
-      defaultInstance = new InstallJARRequest(true);
+      defaultInstance = new InstallJARNotification(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:org.fjn.mapreduce.messages.InstallJARRequest)
-  }
-
-  public interface InstallJARResponseOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required string libraryId = 1;
-    /**
-     * <code>required string libraryId = 1;</code>
-     */
-    boolean hasLibraryId();
-    /**
-     * <code>required string libraryId = 1;</code>
-     */
-    java.lang.String getLibraryId();
-    /**
-     * <code>required string libraryId = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getLibraryIdBytes();
-  }
-  /**
-   * Protobuf type {@code org.fjn.mapreduce.messages.InstallJARResponse}
-   */
-  public static final class InstallJARResponse extends
-      com.google.protobuf.GeneratedMessage
-      implements InstallJARResponseOrBuilder {
-    // Use InstallJARResponse.newBuilder() to construct.
-    private InstallJARResponse(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private InstallJARResponse(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final InstallJARResponse defaultInstance;
-    public static InstallJARResponse getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public InstallJARResponse getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private InstallJARResponse(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              bitField0_ |= 0x00000001;
-              libraryId_ = input.readBytes();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARResponse_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse.class, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<InstallJARResponse> PARSER =
-        new com.google.protobuf.AbstractParser<InstallJARResponse>() {
-      public InstallJARResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new InstallJARResponse(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<InstallJARResponse> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // required string libraryId = 1;
-    public static final int LIBRARYID_FIELD_NUMBER = 1;
-    private java.lang.Object libraryId_;
-    /**
-     * <code>required string libraryId = 1;</code>
-     */
-    public boolean hasLibraryId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required string libraryId = 1;</code>
-     */
-    public java.lang.String getLibraryId() {
-      java.lang.Object ref = libraryId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          libraryId_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string libraryId = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getLibraryIdBytes() {
-      java.lang.Object ref = libraryId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        libraryId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private void initFields() {
-      libraryId_ = "";
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      if (!hasLibraryId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getLibraryIdBytes());
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getLibraryIdBytes());
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code org.fjn.mapreduce.messages.InstallJARResponse}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARResponse_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARResponse_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse.class, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse.Builder.class);
-      }
-
-      // Construct using org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        libraryId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000001);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.internal_static_org_fjn_mapreduce_messages_InstallJARResponse_descriptor;
-      }
-
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse getDefaultInstanceForType() {
-        return org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse.getDefaultInstance();
-      }
-
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse build() {
-        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse buildPartial() {
-        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse result = new org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.libraryId_ = libraryId_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse) {
-          return mergeFrom((org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse other) {
-        if (other == org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse.getDefaultInstance()) return this;
-        if (other.hasLibraryId()) {
-          bitField0_ |= 0x00000001;
-          libraryId_ = other.libraryId_;
-          onChanged();
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        if (!hasLibraryId()) {
-          
-          return false;
-        }
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.fjn.mapreduce.messages.MapReduceMessages.InstallJARResponse) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required string libraryId = 1;
-      private java.lang.Object libraryId_ = "";
-      /**
-       * <code>required string libraryId = 1;</code>
-       */
-      public boolean hasLibraryId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required string libraryId = 1;</code>
-       */
-      public java.lang.String getLibraryId() {
-        java.lang.Object ref = libraryId_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          libraryId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string libraryId = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getLibraryIdBytes() {
-        java.lang.Object ref = libraryId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          libraryId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string libraryId = 1;</code>
-       */
-      public Builder setLibraryId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        libraryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string libraryId = 1;</code>
-       */
-      public Builder clearLibraryId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        libraryId_ = getDefaultInstance().getLibraryId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string libraryId = 1;</code>
-       */
-      public Builder setLibraryIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        libraryId_ = value;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:org.fjn.mapreduce.messages.InstallJARResponse)
-    }
-
-    static {
-      defaultInstance = new InstallJARResponse(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:org.fjn.mapreduce.messages.InstallJARResponse)
+    // @@protoc_insertion_point(class_scope:org.fjn.mapreduce.messages.InstallJARNotification)
   }
 
   public interface CallMapReduceRequestOrBuilder
@@ -2496,19 +2017,19 @@ public final class MapReduceMessages {
   public interface CallMapReduceWithJARRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;
+    // required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;
     /**
-     * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+     * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
      */
     boolean hasLibrary();
     /**
-     * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+     * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
      */
-    org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest getLibrary();
+    org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification getLibrary();
     /**
-     * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+     * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
      */
-    org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequestOrBuilder getLibraryOrBuilder();
+    org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotificationOrBuilder getLibraryOrBuilder();
 
     // repeated double series = 2;
     /**
@@ -2576,11 +2097,11 @@ public final class MapReduceMessages {
               break;
             }
             case 10: {
-              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder subBuilder = null;
+              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
                 subBuilder = library_.toBuilder();
               }
-              library_ = input.readMessage(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.PARSER, extensionRegistry);
+              library_ = input.readMessage(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(library_);
                 library_ = subBuilder.buildPartial();
@@ -2652,25 +2173,25 @@ public final class MapReduceMessages {
     }
 
     private int bitField0_;
-    // required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;
+    // required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;
     public static final int LIBRARY_FIELD_NUMBER = 1;
-    private org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest library_;
+    private org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification library_;
     /**
-     * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+     * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
      */
     public boolean hasLibrary() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+     * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
      */
-    public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest getLibrary() {
+    public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification getLibrary() {
       return library_;
     }
     /**
-     * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+     * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
      */
-    public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequestOrBuilder getLibraryOrBuilder() {
+    public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotificationOrBuilder getLibraryOrBuilder() {
       return library_;
     }
 
@@ -2698,7 +2219,7 @@ public final class MapReduceMessages {
     }
 
     private void initFields() {
-      library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.getDefaultInstance();
+      library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.getDefaultInstance();
       series_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
@@ -2864,7 +2385,7 @@ public final class MapReduceMessages {
       public Builder clear() {
         super.clear();
         if (libraryBuilder_ == null) {
-          library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.getDefaultInstance();
+          library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.getDefaultInstance();
         } else {
           libraryBuilder_.clear();
         }
@@ -2976,20 +2497,20 @@ public final class MapReduceMessages {
       }
       private int bitField0_;
 
-      // required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;
-      private org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.getDefaultInstance();
+      // required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;
+      private org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequestOrBuilder> libraryBuilder_;
+          org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotificationOrBuilder> libraryBuilder_;
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
       public boolean hasLibrary() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest getLibrary() {
+      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification getLibrary() {
         if (libraryBuilder_ == null) {
           return library_;
         } else {
@@ -2997,9 +2518,9 @@ public final class MapReduceMessages {
         }
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
-      public Builder setLibrary(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest value) {
+      public Builder setLibrary(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification value) {
         if (libraryBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3013,10 +2534,10 @@ public final class MapReduceMessages {
         return this;
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
       public Builder setLibrary(
-          org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder builderForValue) {
+          org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder builderForValue) {
         if (libraryBuilder_ == null) {
           library_ = builderForValue.build();
           onChanged();
@@ -3027,14 +2548,14 @@ public final class MapReduceMessages {
         return this;
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
-      public Builder mergeLibrary(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest value) {
+      public Builder mergeLibrary(org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification value) {
         if (libraryBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              library_ != org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.getDefaultInstance()) {
+              library_ != org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.getDefaultInstance()) {
             library_ =
-              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.newBuilder(library_).mergeFrom(value).buildPartial();
+              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.newBuilder(library_).mergeFrom(value).buildPartial();
           } else {
             library_ = value;
           }
@@ -3046,11 +2567,11 @@ public final class MapReduceMessages {
         return this;
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
       public Builder clearLibrary() {
         if (libraryBuilder_ == null) {
-          library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.getDefaultInstance();
+          library_ = org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.getDefaultInstance();
           onChanged();
         } else {
           libraryBuilder_.clear();
@@ -3059,17 +2580,17 @@ public final class MapReduceMessages {
         return this;
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder getLibraryBuilder() {
+      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder getLibraryBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getLibraryFieldBuilder().getBuilder();
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
-      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequestOrBuilder getLibraryOrBuilder() {
+      public org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotificationOrBuilder getLibraryOrBuilder() {
         if (libraryBuilder_ != null) {
           return libraryBuilder_.getMessageOrBuilder();
         } else {
@@ -3077,14 +2598,14 @@ public final class MapReduceMessages {
         }
       }
       /**
-       * <code>required .org.fjn.mapreduce.messages.InstallJARRequest library = 1;</code>
+       * <code>required .org.fjn.mapreduce.messages.InstallJARNotification library = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequestOrBuilder> 
+          org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotificationOrBuilder> 
           getLibraryFieldBuilder() {
         if (libraryBuilder_ == null) {
           libraryBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequest.Builder, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARRequestOrBuilder>(
+              org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotification.Builder, org.fjn.mapreduce.messages.MapReduceMessages.InstallJARNotificationOrBuilder>(
                   library_,
                   getParentForChildren(),
                   isClean());
@@ -3737,15 +3258,10 @@ public final class MapReduceMessages {
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_fjn_mapreduce_messages_InstallJARRequest_descriptor;
+    internal_static_org_fjn_mapreduce_messages_InstallJARNotification_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_org_fjn_mapreduce_messages_InstallJARRequest_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_fjn_mapreduce_messages_InstallJARResponse_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_org_fjn_mapreduce_messages_InstallJARResponse_fieldAccessorTable;
+      internal_static_org_fjn_mapreduce_messages_InstallJARNotification_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_org_fjn_mapreduce_messages_CallMapReduceRequest_descriptor;
   private static
@@ -3776,58 +3292,52 @@ public final class MapReduceMessages {
   static {
     java.lang.String[] descriptorData = {
       "\n\027MapReduceMessages.proto\022\032org.fjn.mapre" +
-      "duce.messages\":\n\021InstallJARRequest\022\022\n\nja" +
-      "rPayload\030\001 \002(\t\022\021\n\tclazzPath\030\002 \002(\t\"\'\n\022Ins" +
-      "tallJARResponse\022\021\n\tlibraryId\030\001 \002(\t\"9\n\024Ca" +
-      "llMapReduceRequest\022\021\n\tlibraryId\030\001 \002(\t\022\016\n" +
-      "\006series\030\002 \003(\001\"t\n\025CallMapReduceResponse\022\021" +
-      "\n\tlibraryId\030\001 \002(\t\022\r\n\005value\030\002 \002(\001\022\032\n\022exec" +
-      "utionTimeMsMap\030\003 \001(\001\022\035\n\025executionTimeMsR" +
-      "educe\030\004 \001(\001\"m\n\033CallMapReduceWithJARReque" +
-      "st\022>\n\007library\030\001 \002(\0132-.org.fjn.mapreduce.",
-      "messages.InstallJARRequest\022\016\n\006series\030\002 \003" +
-      "(\001\"h\n\034CallMapReduceWithJARResponse\022\r\n\005va" +
-      "lue\030\001 \002(\001\022\032\n\022executionTimeMsMap\030\002 \001(\001\022\035\n" +
-      "\025executionTimeMsReduce\030\003 \001(\001B/\n\032org.fjn." +
-      "mapreduce.messagesB\021MapReduceMessages"
+      "duce.messages\"?\n\026InstallJARNotification\022" +
+      "\022\n\njarPayload\030\001 \002(\t\022\021\n\tclazzPath\030\002 \002(\t\"9" +
+      "\n\024CallMapReduceRequest\022\021\n\tlibraryId\030\001 \002(" +
+      "\t\022\016\n\006series\030\002 \003(\001\"t\n\025CallMapReduceRespon" +
+      "se\022\021\n\tlibraryId\030\001 \002(\t\022\r\n\005value\030\002 \002(\001\022\032\n\022" +
+      "executionTimeMsMap\030\003 \001(\001\022\035\n\025executionTim" +
+      "eMsReduce\030\004 \001(\001\"r\n\033CallMapReduceWithJARR" +
+      "equest\022C\n\007library\030\001 \002(\01322.org.fjn.mapred" +
+      "uce.messages.InstallJARNotification\022\016\n\006s",
+      "eries\030\002 \003(\001\"h\n\034CallMapReduceWithJARRespo" +
+      "nse\022\r\n\005value\030\001 \002(\001\022\032\n\022executionTimeMsMap" +
+      "\030\002 \001(\001\022\035\n\025executionTimeMsReduce\030\003 \001(\001B/\n" +
+      "\032org.fjn.mapreduce.messagesB\021MapReduceMe" +
+      "ssages"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
         public com.google.protobuf.ExtensionRegistry assignDescriptors(
             com.google.protobuf.Descriptors.FileDescriptor root) {
           descriptor = root;
-          internal_static_org_fjn_mapreduce_messages_InstallJARRequest_descriptor =
+          internal_static_org_fjn_mapreduce_messages_InstallJARNotification_descriptor =
             getDescriptor().getMessageTypes().get(0);
-          internal_static_org_fjn_mapreduce_messages_InstallJARRequest_fieldAccessorTable = new
+          internal_static_org_fjn_mapreduce_messages_InstallJARNotification_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_org_fjn_mapreduce_messages_InstallJARRequest_descriptor,
+              internal_static_org_fjn_mapreduce_messages_InstallJARNotification_descriptor,
               new java.lang.String[] { "JarPayload", "ClazzPath", });
-          internal_static_org_fjn_mapreduce_messages_InstallJARResponse_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_org_fjn_mapreduce_messages_InstallJARResponse_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_org_fjn_mapreduce_messages_InstallJARResponse_descriptor,
-              new java.lang.String[] { "LibraryId", });
           internal_static_org_fjn_mapreduce_messages_CallMapReduceRequest_descriptor =
-            getDescriptor().getMessageTypes().get(2);
+            getDescriptor().getMessageTypes().get(1);
           internal_static_org_fjn_mapreduce_messages_CallMapReduceRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_fjn_mapreduce_messages_CallMapReduceRequest_descriptor,
               new java.lang.String[] { "LibraryId", "Series", });
           internal_static_org_fjn_mapreduce_messages_CallMapReduceResponse_descriptor =
-            getDescriptor().getMessageTypes().get(3);
+            getDescriptor().getMessageTypes().get(2);
           internal_static_org_fjn_mapreduce_messages_CallMapReduceResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_fjn_mapreduce_messages_CallMapReduceResponse_descriptor,
               new java.lang.String[] { "LibraryId", "Value", "ExecutionTimeMsMap", "ExecutionTimeMsReduce", });
           internal_static_org_fjn_mapreduce_messages_CallMapReduceWithJARRequest_descriptor =
-            getDescriptor().getMessageTypes().get(4);
+            getDescriptor().getMessageTypes().get(3);
           internal_static_org_fjn_mapreduce_messages_CallMapReduceWithJARRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_fjn_mapreduce_messages_CallMapReduceWithJARRequest_descriptor,
               new java.lang.String[] { "Library", "Series", });
           internal_static_org_fjn_mapreduce_messages_CallMapReduceWithJARResponse_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+            getDescriptor().getMessageTypes().get(4);
           internal_static_org_fjn_mapreduce_messages_CallMapReduceWithJARResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_fjn_mapreduce_messages_CallMapReduceWithJARResponse_descriptor,
