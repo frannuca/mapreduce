@@ -51,12 +51,11 @@ object ScalaMatBuild extends Build {
   /**
    * top layer
    */
-  lazy val scalaMatPrj = Project(
+  lazy val mapReduceProject = Project(
     "mapreduce",
     file("."),
     settings = buildSettings ++ Seq(resolvers := Seq(typesafe, sonatype1, sonatype2), libraryDependencies ++=
       Seq(proto,rmq, apacheMath, scalaTest,akkaConf, junit, scalaTest, scalaReflect,log4j))
-  ) 
-
+  )
 
 }

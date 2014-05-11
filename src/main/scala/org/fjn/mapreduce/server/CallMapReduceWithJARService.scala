@@ -44,7 +44,7 @@ object CallMapReduceWithJARService{
        */
       this.getClass.getClassLoader)
 
-      var clazz = classLoader.loadClass(clazzPath)
+      val clazz = classLoader.loadClass(clazzPath)
 
 
 
